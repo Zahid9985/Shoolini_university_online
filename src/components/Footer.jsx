@@ -86,7 +86,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <p>
-            © {new Date().getFullYear()} Shoolini University Online. All Rights Reserved.
+            © {new Date().getFullYear()} This is a student portfolio project for educational purposes only. It is not the official website of Shoolini University.
             &nbsp;|&nbsp;
             <a href="#" style={{ color: 'rgba(255,255,255,0.5)' }}>Privacy Policy</a>
             &nbsp;|&nbsp;
