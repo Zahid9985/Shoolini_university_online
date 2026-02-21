@@ -1,0 +1,24 @@
+/* ============================================
+   TextType Animation Component Styles
+   ============================================ */
+
+.text-type {
+  display: inline;
+  white-space: pre-wrap;
+}
+
+.text-type__content {
+  display: inline;
+}
+
+.text-type__cursor {
+  margin-left: 2px;
+  display: inline-block;
+  opacity: 1;
+  font-weight: 400;
+  color: #FC3B63;
+}
+
+.text-type__cursor--hidden {
+  display: none;
+}
