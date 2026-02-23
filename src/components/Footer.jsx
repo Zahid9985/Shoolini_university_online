@@ -1,9 +1,5 @@
 import React from 'react';
 import '../styles/styles.css';
-import { FaFacebook } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa6";
-import { IoLogoWhatsapp } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -17,10 +13,11 @@ const Footer = () => {
             NAAC A+ accredited online degrees for working professionals and fresh graduates.
           </p>
           <div className="footer-social">
-            <div className="social-btn"><FaFacebook /></div>
-            <div className="social-btn"><FaSquareInstagram /></div>
-            <div className="social-btn"><FaTwitter /></div>
-            <div className="social-btn"><IoLogoWhatsapp /></div>
+            <div className="social-btn">📘</div>
+            <div className="social-btn">📸</div>
+            <div className="social-btn">🐦</div>
+            <div className="social-btn">💼</div>
+            <div className="social-btn">▶️</div>
           </div>
         </div>
 
@@ -57,12 +54,14 @@ const Footer = () => {
           <h4>Contact Us</h4>
 
           <div className="footer-contact-item">
-            <span className="icon">📍</span>
+            <span className="icon"><FaLocationDot />
+</span>
             <p>Shoolini University, Solan,<br />Himachal Pradesh 173212, India</p>
           </div>
 
           <div className="footer-contact-item">
-            <span className="icon">📞</span>
+            <span className="icon"><FaPhoneAlt />
+</span>
             <p>
               <a href="tel:+911800000000">1800-000-0000</a><br />
               <a href="tel:+911792220000">+91-1792-220000</a>
@@ -70,7 +69,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-contact-item">
-            <span className="icon">✉️</span>
+            <span className="icon"><IoMailUnreadSharp /></span>
             <p>
               <a href="mailto:online@shooliniuniversity.com">
                 online@shooliniuniversity.com
@@ -79,7 +78,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-contact-item">
-            <span className="icon">🕐</span>
+            <span className="icon"><FaClock /></span>
             <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
           </div>
         </div>
