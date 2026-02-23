@@ -1,5 +1,14 @@
 import React from 'react';
 import '../styles/styles.css';
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMailUnreadSharp } from "react-icons/io5";
+import { FaClock } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -13,11 +22,14 @@ const Footer = () => {
             NAAC A+ accredited online degrees for working professionals and fresh graduates.
           </p>
           <div className="footer-social">
-            <div className="social-btn">📘</div>
-            <div className="social-btn">📸</div>
-            <div className="social-btn">🐦</div>
-            <div className="social-btn">💼</div>
-            <div className="social-btn">▶️</div>
+            <div className="social-btn"><FaFacebook />
+</div>
+            <div className="social-btn"><FaSquareInstagram />
+</div>
+            <div className="social-btn"><FaSquareXTwitter /></div>
+            <div className="social-btn"><FaSquareWhatsapp />
+</div>
+            <div className="social-btn"><FaYoutube /></div>
           </div>
         </div>
 
@@ -54,12 +66,14 @@ const Footer = () => {
           <h4>Contact Us</h4>
 
           <div className="footer-contact-item">
-            <span className="icon">📍</span>
+            <span className="icon"><FaLocationDot />
+</span>
             <p>Shoolini University, Solan,<br />Himachal Pradesh 173212, India</p>
           </div>
 
           <div className="footer-contact-item">
-            <span className="icon">📞</span>
+            <span className="icon"><FaPhoneAlt />
+</span>
             <p>
               <a href="tel:+911800000000">1800-000-0000</a><br />
               <a href="tel:+911792220000">+91-1792-220000</a>
@@ -67,7 +81,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-contact-item">
-            <span className="icon">✉️</span>
+            <span className="icon"><IoMailUnreadSharp /></span>
             <p>
               <a href="mailto:online@shooliniuniversity.com">
                 online@shooliniuniversity.com
@@ -76,7 +90,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-contact-item">
-            <span className="icon">🕐</span>
+            <span className="icon"><FaClock /></span>
             <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
           </div>
         </div>
