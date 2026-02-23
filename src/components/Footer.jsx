@@ -1,5 +1,9 @@
 import React from 'react';
 import '../styles/styles.css';
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -13,11 +17,10 @@ const Footer = () => {
             NAAC A+ accredited online degrees for working professionals and fresh graduates.
           </p>
           <div className="footer-social">
-            <div className="social-btn">📘</div>
-            <div className="social-btn">📸</div>
-            <div className="social-btn">🐦</div>
-            <div className="social-btn">💼</div>
-            <div className="social-btn">▶️</div>
+            <div className="social-btn"><FaFacebook /></div>
+            <div className="social-btn"><FaSquareInstagram /></div>
+            <div className="social-btn"><FaTwitter /></div>
+            <div className="social-btn"><IoLogoWhatsapp /></div>
           </div>
         </div>
 

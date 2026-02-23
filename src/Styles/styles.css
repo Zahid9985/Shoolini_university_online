@@ -1002,6 +1002,7 @@ body {
   transition: var(--transition);
   border: 1px solid var(--border);
   box-shadow: 0 8px 20px rgba(255, 0, 0, 0.168);
+  color: white;
 }
 
 .program-card:hover {
