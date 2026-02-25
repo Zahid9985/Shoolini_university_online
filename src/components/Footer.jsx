@@ -1,5 +1,15 @@
 import React from 'react';
 import '../styles/styles.css';
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaWhatsappSquare } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { IoLocation } from "react-icons/io5";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMailUnreadSharp } from "react-icons/io5";
+import { FaClock } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -13,11 +23,13 @@ const Footer = () => {
             NAAC A+ accredited online degrees for working professionals and fresh graduates.
           </p>
           <div className="footer-social">
-            <div className="social-btn">📘</div>
-            <div className="social-btn">📸</div>
-            <div className="social-btn">🐦</div>
-            <div className="social-btn">💼</div>
-            <div className="social-btn">▶️</div>
+            <div className="social-btn"><FaFacebook />
+</div>
+            <div className="social-btn"><FaInstagramSquare /></div>
+            <div className="social-btn"><FaSquareXTwitter /></div>
+            <div className="social-btn"><FaWhatsappSquare /></div>
+            <div className="social-btn"><FaYoutube />
+</div>
           </div>
         </div>
 
@@ -54,7 +66,7 @@ const Footer = () => {
           <h4>Contact Us</h4>
 
           <div className="footer-contact-item">
-            <span className="icon"><FaLocationDot />
+            <span className="icon"><IoLocation />
 </span>
             <p>Shoolini University, Solan,<br />Himachal Pradesh 173212, India</p>
           </div>

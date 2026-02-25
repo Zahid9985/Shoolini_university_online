@@ -55,7 +55,7 @@ const reasons = [
 const WhyUs = () => {
   return (
     <section className="why-section circuit-wrapper">
-      <div className="circuit-background"></div>
+      {/* <div className="circuit-background"></div> */}
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Why Choose Us</span>

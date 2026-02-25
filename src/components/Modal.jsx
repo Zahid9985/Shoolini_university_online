@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import LeadForm from './LeadForm';
 import '../styles/styles.css';
 
-const Modal = ({ isOpen, onClose }) => {
+const Modal = ({ isOpen, onClose, onApply }) => {
   // Lock body scroll when modal is open
   useEffect(() => {
     if (isOpen) {
@@ -38,7 +38,7 @@ const Modal = ({ isOpen, onClose }) => {
         </button>
 
         {/* Form */}
-        <LeadForm onClose={onClose} />
+        <LeadForm onClose={onClose} onApply={onApply} />
       </div>
     </div>
   );

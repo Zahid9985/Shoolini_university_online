@@ -17,8 +17,8 @@ const TYPED_PHRASES = [
 
 const Hero = ({ onApplyClick }) => {
   return (
-    <div class="circuit-wrapper">
-  <div class="circuit-background"></div>
+  //   <div class="circuit-wrapper">
+  // <div class="circuit-background"></div>
     <section className="hero">
       <div className="hero-grid"   aria-hidden="true" />
       <div className="hero-aurora" aria-hidden="true" />
@@ -86,7 +86,7 @@ const Hero = ({ onApplyClick }) => {
 
         <div className="hero-image-wrapper">
           <img
-            src="https://images.unsplash.com/photo-1562774053-701939374585?w=700&q=85"
+            src="src\assets\heroimg.jpeg"
             alt="Shoolini University Campus"
             className="hero-university-img"
           />
@@ -101,7 +101,7 @@ const Hero = ({ onApplyClick }) => {
         </div>
       </div>
     </section>
-    </div>
+   
   );
 };
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PressButton from './PressButton';
 import '../styles/styles.css';
 
-const LeadForm = () => {
+const LeadForm = ({ onApply }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,12 +17,23 @@ const LeadForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Handle form submission logic here
+  //   console.log('Form submitted:', formData);
+  //   setSubmitted(true);
+  // };
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-  };
+  e.preventDefault();
+
+  console.log('Form submitted:', formData);
+
+  if (onApply) {
+    onApply();   // tells App.jsx user has applied
+  }
+
+  setSubmitted(true);
+};
 
   if (submitted) {
     return (

@@ -30,12 +30,12 @@ const aboutFeatures = [
 const About = () => {
   return (
     <section className="about-section circuit-wrapper">
-      <div className="circuit-background"></div>
+      {/* <div className="circuit-background"></div> */}
       <div className="container">
         {/* Image */}
         <div className="about-image-wrapper">
           <img
-            src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=80"
+            src="src\assets\About_img.png"
             alt="Shoolini University Campus"
           />
           <div className="about-image-badge">

@@ -1,11 +1,14 @@
 import React from 'react';
 import PressButton from './PressButton';
 import '../styles/styles.css';
-import { MdSubject } from "react-icons/md";
+import artIcon from '../assets/programLogo/Arts.png';
+import buisIcon from '../assets/programLogo/Business.png';
+import bcaIcon from '../assets/programLogo/ComputerApplications.png';
+import mbaIcon from '../assets/programLogo/MBA.png';
 
 const programs = [
   {
-    icon: <MdSubject />,
+    icon: mbaIcon,
     name: 'MBA',
     tagline: 'Master of Business Administration',
     highlights: ['Marketing', 'Finance', 'HR', 'Operations', 'IT Management'],
@@ -13,7 +16,7 @@ const programs = [
     eligibility: 'Any Graduate',
   },
   {
-    icon: <MdSubject />,
+    icon: bcaIcon,
     name: 'MCA',
     tagline: 'Master of Computer Applications',
     highlights: ['Data Science', 'Cloud Computing', 'Cybersecurity', 'AI/ML'],
@@ -21,7 +24,7 @@ const programs = [
     eligibility: 'B.Sc./BCA/BIT',
   },
   {
-    icon: <MdSubject />,
+    icon: artIcon,
     name: 'M.Sc. Data Science',
     tagline: 'Master of Science in Data Science',
     highlights: ['Machine Learning', 'Python', 'Big Data', 'Analytics'],
@@ -29,7 +32,7 @@ const programs = [
     eligibility: 'Any Science Graduate',
   },
   {
-    icon: <MdSubject />,
+    icon: buisIcon,
     name: 'BBA',
     tagline: 'Bachelor of Business Administration',
     highlights: ['Entrepreneurship', 'Marketing', 'Finance', 'Leadership'],
@@ -37,7 +40,7 @@ const programs = [
     eligibility: '10+2 Pass',
   },
   {
-    icon: <MdSubject />,
+    icon: bcaIcon,
     name: 'BCA',
     tagline: 'Bachelor of Computer Applications',
     highlights: ['Web Development', 'Java', 'Databases', 'Networking'],
@@ -45,19 +48,45 @@ const programs = [
     eligibility: '10+2 Pass',
   },
   {
-    icon: <MdSubject />,
-    name: 'M.Com',
-    tagline: 'Master of Commerce',
+    icon: buisIcon,
+    name: 'B.Com (Hons.)',
+    tagline: 'Bachelor of Commerce (Honours)',
     highlights: ['Accounting', 'Taxation', 'Finance', 'Economics'],
-    duration: '2 Years',
-    eligibility: 'B.Com Graduate',
+    duration: '3 Years',
+    eligibility: '10+2 pass',
   },
+  {
+  icon: artIcon,
+  name: 'MA',
+  tagline: 'English Literature',
+  highlights: ["Literary Theory","World Literature","Critical Analysis","Academic Writing","Research Methodology"],
+  duration: '2 Years',
+  eligibility: 'bachelor degree',
+
+
+},
+{
+  icon: buisIcon,
+  name: 'MBA Premium',
+  tagline: 'Master of Business Administration',
+  highlights: ['1:1 Personal Mentorship', 'Hybrid or Flexible Learning', 'System Design'],
+  duration: '2 Years',
+  eligibility: 'bachelor degree',
+},
+{
+  icon: artIcon,
+  name: 'MA in Journalism & Mass Communication',
+  // tagline: 'Shape Narratives, Influence Minds, Command the Media.',
+  highlights: ['Media Studies', 'Reporting', 'Digital Media'],
+  duration: '2 Years',
+  eligibility: 'Bachelor degree',
+},
 ];
 
 const Programs = ({ onApplyClick }) => {
   return (
     <section className="programs-section circuit-wrapper">
-      <div className="circuit-background"></div>
+      {/* <div className="circuit-background"></div> */}
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Our Programs</span>
@@ -74,7 +103,9 @@ const Programs = ({ onApplyClick }) => {
           {programs.map((prog, idx) => (
             <div className="program-card" key={idx}>
               <div className="program-card-header">
-                <div className="program-icon">{prog.icon}</div>
+                <div className="program-icon">
+  <img src={prog.icon} alt={prog.name} />
+</div>
                 <div>
                   <h3>{prog.name}</h3>
                   <span>{prog.tagline}</span>

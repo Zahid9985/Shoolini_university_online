@@ -6,7 +6,7 @@ import { PiMicrophoneStageFill } from "react-icons/pi";
 const CTASection = ({ onApplyClick }) => {
   return (
     <section className="cta-section circuit-wrapper">
-        <div className="circuit-background"></div>
+        {/* <div className="circuit-background"></div> */}
 
       <div className="container">
         <div className="cta-box">

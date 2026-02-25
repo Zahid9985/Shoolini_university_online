@@ -28,7 +28,7 @@ const steps = [
 const AdmissionProcess = ({ onApplyClick }) => {
   return (
     <section className="process-section circuit-wrapper">
-        <div className="circuit-background"></div>
+        {/* <div className="circuit-background"></div> */}
 
       <div className="container">
         <div className="section-header">
