@@ -5,6 +5,7 @@ import '../styles/styles.css';
 // import callIcon from "../assets/callicon.svg";
 import { IoCall } from "react-icons/io5";
 import { MdSchool } from "react-icons/md";
+import heroImg from "../assets/heroimg.jpeg";
 
 const TYPED_PHRASES = [
   'Online Degrees',
@@ -86,7 +87,7 @@ const Hero = ({ onApplyClick }) => {
 
         <div className="hero-image-wrapper">
           <img
-            src="src\assets\heroimg.jpeg"
+            src={heroImg}
             alt="Shoolini University Campus"
             className="hero-university-img"
           />

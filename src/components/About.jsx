@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/styles.css';
+import aboutImg from "../assets/About_img.png";
 import { FaBuildingColumns } from "react-icons/fa6";
 import { GiArchiveResearch } from "react-icons/gi";
 import { GiTeacher } from "react-icons/gi";
@@ -35,7 +36,7 @@ const About = () => {
         {/* Image */}
         <div className="about-image-wrapper">
           <img
-            src="src\assets\About_img.png"
+            src= {aboutImg}
             alt="Shoolini University Campus"
           />
           <div className="about-image-badge">
