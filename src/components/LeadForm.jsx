@@ -52,6 +52,12 @@ const LeadForm = ({ onApply }) => {
       <h3 className="form-card-title">Apply for Admission 2025</h3>
       <p className="form-card-sub">Get free counselling from our experts</p>
 
+      <div className="form-security-notice">
+        🔒 Your information is 100% secure. No spam, ever.
+        <br />
+        <small>By submitting you agree to our Privacy Policy & Terms</small>
+      </div>
+
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Full Name *</label>
@@ -149,11 +155,6 @@ const LeadForm = ({ onApply }) => {
         <PressButton type="submit" className="form-submit-btn">
           Apply Now — It's Free!
         </PressButton>
-
-        <p className="form-privacy">
-          🔒 Your information is 100% secure. No spam, ever.
-          <br />By submitting you agree to our Privacy Policy & Terms.
-        </p>
       </form>
     </div>
   );

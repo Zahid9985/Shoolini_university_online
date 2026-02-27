@@ -18,19 +18,12 @@ const TYPED_PHRASES = [
 
 const Hero = ({ onApplyClick }) => {
   return (
-  //   <div class="circuit-wrapper">
-  // <div class="circuit-background"></div>
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-grid"   aria-hidden="true" />
       <div className="hero-aurora" aria-hidden="true" />
 
       <div className="container">
         <div className="hero-content">
-          <div className="hero-badge">
-            <span></span>
-            Admissions Open 2025 — Limited Seats
-          </div>
-
           <h1 className="hero-title">
             Advance Your Career with
             <br />

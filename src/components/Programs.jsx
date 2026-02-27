@@ -85,7 +85,7 @@ const programs = [
 
 const Programs = ({ onApplyClick }) => {
   return (
-    <section className="programs-section circuit-wrapper">
+    <section className="programs-section circuit-wrapper" id="programs">
       {/* <div className="circuit-background"></div> */}
       <div className="container">
         <div className="section-header">
