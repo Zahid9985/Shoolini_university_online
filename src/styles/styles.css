@@ -1426,21 +1426,20 @@ color: #d52121;
 }
 
 .testimonial-card {
-  background: rgba(255, 255, 255, 0.07);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid rgba(17, 17, 17, 0.12);
   border-radius: var(--radius);
   padding: 28px;
   transition: var(--transition);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .testimonial-card:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(99, 102, 241, 0.4);
+  background: #ffffff;
+  border-color: rgba(17, 17, 17, 0.22);
   transform: translateY(-6px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial-stars {
@@ -1449,11 +1448,12 @@ color: #d52121;
   margin-bottom: 14px;
   color: #f59e0b;
   font-size: 16px;
+  text-shadow: 0 0 6px rgba(245, 158, 11, 0.7), 0 0 14px rgba(245, 158, 11, 0.45);
 }
 
 .testimonial-text {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.88);
+  color: #111111;
   line-height: 1.75;
   margin-bottom: 20px;
   font-style: italic;
@@ -1483,12 +1483,12 @@ color: #d52121;
   display: block;
   font-size: 14px;
   font-weight: 700;
-  color: var(--white);
+  color: #111111;
 }
 
 .author-info span {
   font-size: 12px;
-  color: rgba(255,255,255,0.65);
+  color: #444444;
 }
 
 /* ---- ADMISSION PROCESS ---- */
